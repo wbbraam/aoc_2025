@@ -18,10 +18,9 @@ fun rotateDial(current: Int, steps: Int): Int {
 }
 
 fun main() {
-    val name = "Kotlin"
     var dialPoint = 50
     var zeroCount = 0
-    val lines = readLinesFromFile("AAC-1A.txt")
+    val lines = readLinesFromFile("MILO.txt")
 
     lines.forEach {
         val (dir, amount) = splitFirstCharAndIntSafe(it)
