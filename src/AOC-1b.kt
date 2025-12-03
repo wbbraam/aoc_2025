@@ -1,8 +1,5 @@
 import java.io.File
-
-fun readLinesFromFile(filename: String): List<String> {
-    return File(filename).readLines()
-}
+import myUtils.*
 
 fun splitFirstCharAndIntSafe(input: String): Pair<String, Int?> {
     require(input.isNotEmpty()) { "Input string must not be empty." }

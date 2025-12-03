@@ -1,3 +1,6 @@
+package exercise2B
+
+import myUtils.*
 import java.io.File
 
 

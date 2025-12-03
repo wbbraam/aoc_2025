@@ -1,5 +1,5 @@
 import java.io.File
-
+import myUtils.*
 
 fun isInvalidId2A(id: Long): Boolean {
     val s = id.toString()
