@@ -38,17 +38,19 @@ fun maxJoltage(bank: String, pick: Int): String {
 
 
 fun main() {
-
+    val start = System.currentTimeMillis()
     var answer:Long = 0
     val lines = readLinesFromFile("AAC-3A.txt")
 
     lines.forEach {
-        println(it)
+        //println(it)
         val highest = maxJoltage(it, 12)
-        println(highest)
+        //println(highest)
         answer += highest.toLong()
     }
 
 
     println("Answer is $answer")
+    val end = System.currentTimeMillis()
+    println("Time taken: ${end - start} ms")
 }
